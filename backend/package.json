@@ -1,0 +1,36 @@
+{
+  "name": "incident-hub-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "API REST de IT Incident Hub",
+  "main": "src/server.js",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "lint": "eslint src",
+    "test": "jest --coverage --ci"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "globals": "^15.0.0",
+    "jest": "^29.7.0",
+    "jest-junit": "^16.0.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "roots": ["<rootDir>/../tests"],
+    "modulePaths": ["<rootDir>/node_modules"],
+    "collectCoverageFrom": ["src/**/*.js", "!src/server.js", "!src/repositories/pgRepository.js"],
+    "coverageDirectory": "coverage",
+    "coverageReporters": ["text", "cobertura"],
+    "reporters": ["default", "jest-junit"]
+  }
+}
