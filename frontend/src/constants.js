@@ -1,0 +1,10 @@
+export const CATEGORIES = ['HARDWARE', 'SOFTWARE', 'RED', 'ACCESO', 'OTRO'];
+export const PRIORITIES = ['BAJA', 'MEDIA', 'ALTA', 'CRITICA'];
+export const STATUSES = ['NUEVO', 'ASIGNADO', 'EN_PROCESO', 'RESUELTO', 'CERRADO'];
+export const NEXT_STATUS = {
+  NUEVO: [],
+  ASIGNADO: ['EN_PROCESO'],
+  EN_PROCESO: ['RESUELTO'],
+  RESUELTO: ['CERRADO', 'EN_PROCESO'],
+  CERRADO: [],
+};
