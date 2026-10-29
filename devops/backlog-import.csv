@@ -1,0 +1,31 @@
+Work Item Type,Title 1,Title 2,Title 3,Title 4,Priority,Story Points,Original Estimate,State
+Epic,Gestión de incidentes TI,,,,1,,,New
+Feature,,Registro y consulta de incidentes,,,1,,,New
+User Story,,,Registrar un incidente,,1,3,,New
+Task,,,,Diseñar esquema PostgreSQL y datos semilla,1,,3,New
+Task,,,,Implementar POST /api/incidents con validaciones,1,,4,New
+User Story,,,Consultar y filtrar incidentes,,1,5,,New
+Task,,,,Implementar GET /api/incidents con filtros,2,,3,New
+Task,,,,Crear listado y filtros en el frontend React,2,,5,New
+Feature,,Operación seguimiento e indicadores,,,1,,,New
+User Story,,,Asignar técnico y cambiar estado,,1,5,,New
+Task,,,,Implementar asignación y máquina de estados,1,,5,New
+Task,,,,Crear vista de detalle con acciones de estado,2,,4,New
+User Story,,,Bitácora y dashboard de indicadores,,2,5,,New
+Task,,,,Implementar comentarios y bitácora automática,2,,3,New
+Task,,,,Crear dashboard con indicadores,2,,4,New
+Epic,Entrega continua DevOps,,,,1,,,New
+Feature,,Pipeline CI y calidad,,,1,,,New
+User Story,,,Pipeline de CI en Azure Pipelines con agente autohospedado,,1,5,,New
+Task,,,,Registrar agente autohospedado y crear azure-pipelines.yml,1,,5,New
+Task,,,,Publicar pruebas cobertura y artefacto,2,,3,New
+User Story,,,Workflow complementario en GitHub Actions,,2,3,,New
+Task,,,,Crear workflow de PR con lint y pruebas,2,,2,New
+Task,,,,Configurar revisión de dependencias,2,,2,New
+Feature,,Seguridad y release,,,1,,,New
+User Story,,,Gestión de secretos y dependencias,,1,3,,New
+Task,,,,Configurar Variable Group con secretos protegidos,1,,2,New
+Task,,,,Analizar npm audit y documentar decisiones,2,,3,New
+User Story,,,Estrategia de release y versionado hasta v1.0.0,,1,5,,New
+Task,,,,Configurar ambientes DEV/QA/PROD con aprobaciones,1,,3,New
+Task,,,,Etiquetar versiones SemVer y publicar release v1.0.0,1,,2,New
